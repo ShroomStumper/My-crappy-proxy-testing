@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luckysense.Love - Proxy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.png" type="image/png">
+</head>
+
+<body>
+    <header>
+        <h1 class="main-title">
+            <span class="luckysense">Luckysense</span><span class="love">.Love</span>
+        </h1>
+    </header>
+
+    <div id="url-bar">
+        <form id="url-form">
+            <input type="text" id="url-input" placeholder="Enter URL" value="https://www.google.com">
+            <button id="go-button">Go</button>
+        </form>
+    </div>
+
+    <div id="main-content">
+        <iframe id="proxy-iframe" src=""></iframe>
+
+        <div id="sidebar">
+            <div class="tab-buttons">
+                <button class="tab-button active" data-tab="stealth">Stealth</button>
+                <button class="tab-button" data-tab="bypass">Bypass</button>
+                <button class="tab-button" data-tab="settings">Settings</button>
+            </div>
+
+            <div class="tab-content active" id="stealth">
+                <h2>Stealth Options</h2>
+                <button id="panic-button">Panic!</button>
+                <select id="icon-select">
+                    <option value="default">Default Icon</option>
+                    <option value="document">Document</option>
+                    <option value="work">Work</option>
+                </select>
+                <button id="invisible-button">Make Invisible (Experimental)</button>
+            </div>
+
+            <div class="tab-content" id="bypass">
+                <h2>Bypass Tools</h2>
+                <button id="encrypt-toggle">Toggle Encryption</button>
+                <select id="proxy-select">
+                    <option value="direct">Direct Connect</option>
+                    <option value="proxy1">Proxy 1</option>
+                    <option value="proxy2">Proxy 2</option>
+                </select>
+                <button id="rotate-ua">Rotate User-Agent</button>
+            </div>
+
+            <div class="tab-content" id="settings">
+                <h2>Settings</h2>
+                <button id="dark-mode-toggle">Dark Mode</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
